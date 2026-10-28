@@ -184,7 +184,7 @@ function renderFoundingTeam(containerId = "founding-team-grid") {
             alt="Portrait of ${member.name}, ${member.role}" 
             class="team-photo"
             loading="lazy"
-            onerror="this.onerror=null; this.src='${member.fallbackPhoto}'; this.parentElement.classList.add('is-fallback');"
+            onerror="this.onerror=function(){ this.onerror=null; this.src='default-avatar.svg'; }; this.src='${member.fallbackPhoto}'; this.parentElement.classList.add('is-fallback');"
           />
           <div class="team-photo-overlay"></div>
           <span class="${badgeClass}">${member.badgeLabel}</span>

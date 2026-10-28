@@ -63,12 +63,15 @@
       }
     });
 
-    // Highlight current active link based on page URL
-    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    // Highlight current active link based on page URL (resilient to GitHub Pages subpath)
+    let currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    if (!currentPath || currentPath.toLowerCase() === 'entertainment-hub' || currentPath === '') {
+      currentPath = 'index.html';
+    }
     const allNavLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
     allNavLinks.forEach((link) => {
       const href = link.getAttribute('href');
-      if (href && (href === currentPath || (currentPath === '' && href === 'index.html'))) {
+      if (href && (href === currentPath || (currentPath === 'index.html' && (href === 'index.html' || href === './')))) {
         link.classList.add('active');
         link.setAttribute('aria-current', 'page');
       } else {
@@ -174,7 +177,7 @@
         (v) => `
       <article class="card">
         <div class="card-media">
-          <img src="assets/images/cover-sports.svg" alt="${v.title}" loading="lazy">
+          <img src="assets/images/cover-sports.svg" alt="${v.title}" loading="lazy" onerror="this.onerror=null; this.src='cover-sports.svg';">
           <span class="badge badge-red card-overlay-badge">${v.badge}</span>
           <span class="card-duration-badge">${v.duration}</span>
         </div>

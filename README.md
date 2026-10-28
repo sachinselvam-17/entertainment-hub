@@ -75,46 +75,43 @@ All internal links and asset paths are strictly relative (e.g. `assets/css/style
 
 ### Deployment Method 1: Using Git Command Line (Recommended)
 
-#### Step 1: Create a GitHub Repository
-1. Log into [github.com](https://github.com).
-2. Click the **+** (plus icon) in the top-right corner and choose **New repository**.
-3. Name your repository (e.g., `EntertainmentHub` or your chosen project name).
-4. Ensure the repository is set to **Public** (required for free GitHub Pages).
-5. Do **NOT** check "Add a README file" (this project already includes one).
-6. Click **Create repository**.
-
-#### Step 2: Push Your Local Code to GitHub
-Open your terminal inside this folder (`EntertainmentHub`) and run:
+Open PowerShell or Terminal inside `c:\EntertainmentHub` and run:
 ```bash
 git init
 git add .
-git commit -m "Initial launch of creator website"
+git commit -m "Fix GitHub Pages styling, asset paths, and missing images"
 git branch -M main
-git remote add origin https://github.com/YOUR_GITHUB_USERNAME/EntertainmentHub.git
-git push -u origin main
+git remote add origin https://github.com/sachinselvam-17/entertainment-hub.git
+git push -u origin main --force
 ```
-*(Replace `YOUR_GITHUB_USERNAME` and `EntertainmentHub` with your actual GitHub username and repository name).*
-
-#### Step 3: Enable GitHub Pages in Repository Settings
-1. On GitHub, navigate to your repository and click the **Settings** tab.
-2. In the left sidebar under "Code and automation", click **Pages**.
-3. Under **Build and deployment**:
-   - **Source**: Select `Deploy from a branch`.
-   - **Branch**: Select `main`.
-   - **Folder**: Select `/ (root)`.
-4. Click **Save**.
-5. Wait 1–2 minutes. Refresh the page until GitHub displays:
-   > *"Your site is live at `https://YOUR_GITHUB_USERNAME.github.io/EntertainmentHub/`"*
 
 ---
 
-### Deployment Method 2: Web Browser Upload (No Git CLI Required)
-If you prefer not to use the terminal:
-1. Create a new public repository on [github.com](https://github.com) without a README.
-2. Click **"uploading an existing file"** on the setup screen.
-3. Drag and drop all files and folders from inside `EntertainmentHub/` (`index.html`, `about.html`, `assets/`, `.nojekyll`, etc.) into the GitHub upload area.
-4. Commit the changes.
-5. Go to **Settings** > **Pages** > Select branch `main` and folder `/ (root)` > Click **Save**.
+### Deployment Method 2: Web Browser Upload (Drag & Drop)
+
+> ⚠️ **IMPORTANT**: In the GitHub web upload screen, clicking the *"choose your files"* button opens a file picker that only lets you select files, **not folders**. If you select files inside subfolders individually, GitHub strips their folder names and dumps them into the root repository folder!
+>
+> **To upload properly via the web browser:**
+> 1. Open your repository at: **https://github.com/sachinselvam-17/entertainment-hub**
+> 2. Click **Add file** > **Upload files**.
+> 3. Open Windows File Explorer to `C:\EntertainmentHub`.
+> 4. **Drag the entire `assets` folder** along with all HTML files directly into the GitHub drag-and-drop dropzone in your browser. (Modern browsers like Chrome and Edge will preserve the folder structure).
+> 5. Wait for all files to be staged, then scroll down and click **Commit changes**.
+>
+> 💡 *Note: This project also includes root fallback copies (`style.css`, `main.js`, `logo.svg`, etc.) so even if files are flattened, every page and style continues to render seamlessly.*
+
+---
+
+### Verifying GitHub Pages Settings
+
+1. On GitHub, navigate to **Settings** > **Pages**.
+2. Under **Build and deployment**:
+   - **Source**: `Deploy from a branch`
+   - **Branch**: `main`
+   - **Folder**: `/ (root)`
+3. Click **Save**.
+4. Within 1–2 minutes, your website will be live and fully styled at:
+   👉 **https://sachinselvam-17.github.io/entertainment-hub/**
 
 ---
 
