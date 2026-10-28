@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun & Challenges | Interactive Sports & Cinema Arena | PLAYZONE</title>
+  <meta name="description" content="Test your sports and cinema knowledge with our interactive trivia quiz, roll creator challenges with a live countdown timer, and vote in the Who Wins showdown!">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fun & Challenges Arena | PLAYZONE">
+  <meta property="og:description" content="Play our interactive Sports & Cinema Quiz, Random Challenge Generator, and Who Wins? comparison game.">
+  <meta property="og:image" content="assets/images/cover-challenge.svg">
+  <meta property="og:url" content="https://username.github.io/EntertainmentHub/challenges.html">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-ticker" role="region" aria-label="Announcement Banner">
+    <div class="container ticker-content">
+      <div class="ticker-left">
+        <span class="ticker-badge" style="background:#10B981; color:#FFF;">CHALLENGES ARENA</span>
+        <span class="ticker-text">⚡ 3 Working Client-Side Games: Fan Quiz, Timer Challenge, and Who Wins? Showdown!</span>
+      </div>
+      <div class="ticker-socials">
+        <a href="https://www.youtube.com/@PlayzoneOfficial" target="_blank" rel="noopener noreferrer" class="js-channel-link">YouTube Channel</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="PLAYZONE Home">
+        <img src="assets/images/logo.svg" alt="PLAYZONE Logo">
+      </a>
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="sports.html" class="nav-link">Sports Zone</a>
+        <a href="cinema.html" class="nav-link">Cinema Zone</a>
+        <a href="opinions.html" class="nav-link">Opinions</a>
+        <a href="challenges.html" class="nav-link active">Fun &amp; Challenges</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://www.youtube.com/@PlayzoneOfficial?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-youtube js-subscribe-link">
+          <span>Subscribe</span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open mobile navigation menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-drawer-header">
+      <span class="brand-logo" style="font-size:1.2rem;">PLAY<span class="text-accent-red">ZONE</span></span>
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close mobile navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="sports.html" class="mobile-nav-link">Sports Zone</a></li>
+      <li><a href="cinema.html" class="mobile-nav-link">Cinema Zone</a></li>
+      <li><a href="opinions.html" class="mobile-nav-link">Opinions</a></li>
+      <li><a href="challenges.html" class="mobile-nav-link active">Fun &amp; Challenges</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="https://www.youtube.com/@PlayzoneOfficial?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn btn-youtube js-subscribe-link" style="width:100%;">
+        Subscribe on YouTube
+      </a>
+    </div>
+  </aside>
+  <div class="drawer-backdrop" id="drawer-backdrop" tabindex="-1"></div>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content" class="main-content">
+    
+    <!-- Hero Banner -->
+    <section class="section-tight" style="background: radial-gradient(circle at 50% 20%, rgba(16, 185, 129, 0.12), transparent 70%); border-bottom:1px solid var(--border-subtle);">
+      <div class="container">
+        <div style="max-width:760px; margin-bottom: 24px;">
+          <span class="section-tag" style="color:var(--accent-green);">COMMUNITY INTERACTIVE ARENA</span>
+          <h1 style="margin-top:8px;">Fun &amp; Challenges: The Fan Game Zone</h1>
+          <p style="color:var(--text-secondary); font-size:1.1rem; margin-top:8px;">
+            Jump into our client-side interactive games! Take on the multi-category trivia quiz with instant feedback, roll exciting creator speed challenges with a live countdown timer, or vote in the epic "Who Wins?" showdowns.
+          </p>
+          <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:16px;">
+            <span class="badge badge-sample">
+              🎮 100% Client-Side • No Login Required • Interactive Scores &amp; Timers
+            </span>
+            <span class="badge badge-sample">
+              Disclaimer: Game results are for fan entertainment and do not represent official statistics or expert betting advice.
+            </span>
+          </div>
+        </div>
+
+        <!-- Jump to Game Navigation Links -->
+        <div class="filter-tabs">
+          <a href="#quiz-section" class="filter-btn">1. Sports &amp; Cinema Quiz 🎯</a>
+          <a href="#challenge-section" class="filter-btn">2. Random Challenge Generator ⏱️</a>
+          <a href="#who-wins-section" class="filter-btn">3. "Who Wins?" Comparison Game ⚔️</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GAME 1: INTERACTIVE SPORTS & CINEMA QUIZ -->
+    <section class="section" id="quiz-section" aria-labelledby="quiz-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" style="color:var(--accent-gold);">FEATURE 1 OF 3</span>
+          <h2 id="quiz-heading">Interactive Sports &amp; Cinema Trivia Quiz</h2>
+          <p style="color:var(--text-muted); margin:0;">
+            Answer challenging questions, get immediate explanations, and check your final score tally.
+          </p>
+        </div>
+
+        <div class="game-widget-card" id="quiz-widget">
+          <!-- Quiz Category Switcher -->
+          <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px;">
+            <span style="font-size:0.85rem; font-weight:700; color:var(--text-muted); align-self:center; margin-right:6px;">Topic:</span>
+            <button class="filter-btn js-quiz-filter active" data-quiz-category="all">Mixed (Sports &amp; Cinema)</button>
+            <button class="filter-btn js-quiz-filter" data-quiz-category="sports">🏏 Sports Only</button>
+            <button class="filter-btn js-quiz-filter" data-quiz-category="cinema">🎬 Cinema Only</button>
+          </div>
+
+          <!-- Progress and Score Bar -->
+          <div class="quiz-header">
+            <span id="quiz-count-display" class="badge badge-red">Question 1 of 8</span>
+            <div class="quiz-score-pill" id="quiz-score-display">Score: 0 pts</div>
+          </div>
+          <div class="quiz-progress-bar-container">
+            <div class="quiz-progress-bar" id="quiz-progress-bar"></div>
+          </div>
+
+          <!-- Question Body -->
+          <div class="quiz-question-box">
+            <h3 class="quiz-question-text" id="quiz-question-text">Loading question...</h3>
+            <div class="quiz-options-list" id="quiz-options-list">
+              <!-- Dynamically populated buttons -->
+            </div>
+          </div>
+
+          <!-- Answer Explanation Feedback -->
+          <div class="quiz-feedback-box" id="quiz-feedback-box">
+            <p id="quiz-feedback-text" style="margin:0; font-size:0.95rem;"></p>
+          </div>
+
+          <!-- Next Button -->
+          <div style="display:flex; justify-content:flex-end; margin-top:20px;">
+            <button id="quiz-next-btn" class="btn btn-primary" style="display:none;">Next Question →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GAME 2: RANDOM CHALLENGE GENERATOR WITH COUNTDOWN TIMER -->
+    <section class="section" id="challenge-section" style="background:#0C0E17; border-top:1px solid var(--border-subtle); border-bottom:1px solid var(--border-subtle);" aria-labelledby="challenge-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" style="color:var(--accent-red);">FEATURE 2 OF 3</span>
+          <h2 id="challenge-heading">Random Creator Challenge Generator</h2>
+          <p style="color:var(--text-muted); margin:0;">
+            Hit the button to generate a random fan challenge, start the countdown timer, and test yourself before the clock hits zero!
+          </p>
+        </div>
+
+        <div class="game-widget-card" style="max-width:820px; margin: 0 auto;">
+          <!-- Generated Challenge Display Box -->
+          <div class="challenge-display-card" id="challenge-card-display">
+            <span class="badge badge-gold" id="challenge-category" style="margin-bottom:14px;">Loading Category...</span>
+            <h3 id="challenge-title" style="font-size:1.6rem; color:#FFF; margin-bottom:12px;">The 15-Second Captains Blitz</h3>
+            <p id="challenge-desc" style="color:var(--text-secondary); max-width:540px; margin-bottom:16px; font-size:1.05rem;">
+              Hit the timer and name 5 cricket World Cup winning captains before the countdown reaches zero! No pausing or looking at your phone!
+            </p>
+            <div style="background:rgba(255, 30, 39, 0.1); border:1px solid rgba(255,30,39,0.3); border-radius:var(--radius-sm); padding:8px 16px;">
+              <span style="font-weight:700; color:var(--accent-red); font-size:0.85rem;">⚠️ Forfeit If You Fail: </span>
+              <span id="challenge-forfeit" style="font-size:0.85rem; color:var(--text-secondary);">If you fail, drop your most embarrassing sports prediction in the comments!</span>
+            </div>
+          </div>
+
+          <!-- Digital Timer & Controls -->
+          <div class="challenge-timer-box">
+            <button id="challenge-spin-btn" class="btn btn-primary">
+              🎲 Roll New Challenge
+            </button>
+            <div class="digital-timer" id="challenge-timer-display" aria-label="Challenge Countdown Timer">00:15</div>
+            <button id="timer-start-btn" class="btn btn-secondary">
+              Start Timer ▶
+            </button>
+            <button id="timer-reset-btn" class="btn btn-outline">
+              Reset ↺
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GAME 3: "WHO WINS?" COMPARISON GAME -->
+    <section class="section" id="who-wins-section" aria-labelledby="who-wins-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" style="color:var(--accent-cyan);">FEATURE 3 OF 3</span>
+          <h2 id="who-wins-heading">"Who Wins?" Comparison Game</h2>
+          <p style="color:var(--text-muted); margin:0;">
+            Two legendary contenders, one victor. Cast your vote, see the instant community percentage split, and reveal the creator's verdict breakdown.
+          </p>
+        </div>
+
+        <div class="game-widget-card" id="comparison-widget">
+          <!-- Matchup Navigation Controls -->
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; padding-bottom:16px; border-bottom:1px solid var(--border-card);">
+            <div>
+              <span class="badge badge-red" id="cmp-matchup-category">Cricket Legend Clash</span>
+              <h3 id="cmp-matchup-title" style="margin-top:6px; font-size:1.35rem;">Ultimate Clutch Run-Chase Finisher</h3>
+            </div>
+            <div style="display:flex; gap:8px;">
+              <button id="cmp-prev-btn" class="btn btn-sm btn-outline" aria-label="Previous Matchup">← Prev Matchup</button>
+              <button id="cmp-next-btn" class="btn btn-sm btn-outline" aria-label="Next Matchup">Next Matchup →</button>
+            </div>
+          </div>
+
+          <!-- Versus Arena -->
+          <div class="comparison-container">
+            <!-- Contender A Card -->
+            <div class="comparison-card" id="cmp-card-a">
+              <span class="badge badge-gold" id="cmp-tag-a">Calculated Finisher</span>
+              <h4 id="cmp-name-a" style="font-size:1.4rem; color:#FFF;">Prime MS Dhoni (2011)</h4>
+              <p id="cmp-stat-a" style="font-weight:700; color:var(--accent-red); font-size:0.9rem;">Ice-Cold Temperament</p>
+              <p id="cmp-desc-a" style="font-size:0.88rem; color:var(--text-secondary); margin-bottom:14px;">
+                Takes the game deep to the 20th over, maximizes pressure on bowler, famous helicopter finish.
+              </p>
+              <button id="cmp-vote-a" class="btn btn-primary" style="margin-top:auto;">Vote for Option A</button>
+            </div>
+
+            <!-- VS Divider -->
+            <div class="vs-badge-divider">VS</div>
+
+            <!-- Contender B Card -->
+            <div class="comparison-card" id="cmp-card-b">
+              <span class="badge badge-gold" id="cmp-tag-b">Unstoppable Battler</span>
+              <h4 id="cmp-name-b" style="font-size:1.4rem; color:#FFF;">Ben Stokes (2019 Headingley)</h4>
+              <p id="cmp-stat-b" style="font-weight:700; color:var(--accent-gold); font-size:0.9rem;">Pure Heroic Grit</p>
+              <p id="cmp-desc-b" style="font-size:0.88rem; color:var(--text-secondary); margin-bottom:14px;">
+                Relentless counter-punching with the #11 batter, switch-hits, boundary clearing under immense pressure.
+              </p>
+              <button id="cmp-vote-b" class="btn btn-secondary" style="margin-top:auto; border-color:var(--accent-gold);">Vote for Option B</button>
+            </div>
+          </div>
+
+          <!-- Community Poll Progress Bar -->
+          <div style="margin-top:16px;">
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem; font-weight:700; margin-bottom:6px;">
+              <span id="cmp-pct-a" style="color:var(--accent-red);">Vote to reveal %</span>
+              <span id="cmp-pct-b" style="color:var(--accent-gold);">Vote to reveal %</span>
+            </div>
+            <div class="poll-bar-container">
+              <div class="poll-fill-a" id="cmp-bar-a" style="width:50%;"></div>
+              <div class="poll-fill-b" id="cmp-bar-b" style="width:50%;"></div>
+            </div>
+          </div>
+
+          <!-- Creator Verdict Reveal Accordion -->
+          <div class="creator-verdict-box" id="cmp-creator-verdict">
+            <h4 id="cmp-verdict-pick" style="color:var(--accent-gold); font-size:1.1rem; margin-bottom:8px;">
+              Creator's Pick: Option A
+            </h4>
+            <p id="cmp-verdict-reason" style="margin:0; font-size:0.92rem; color:var(--text-secondary); line-height:1.6;">
+              Dhoni's strike rate management and psychological mastery of the bowler across 15 years remains unmatched in white-ball cricket history.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscribe Callout Banner -->
+    <section class="section-tight">
+      <div class="container">
+        <div class="subscribe-callout">
+          <div class="subscribe-grid">
+            <div>
+              <span class="badge badge-gold" style="margin-bottom:10px;">PLAYZONE INTERACTIVE SESSIONS</span>
+              <h2 style="font-size:1.8rem; margin-bottom:10px;">Want To Join Us Live On Stream?</h2>
+              <p style="color:var(--text-secondary); margin:0;">
+                We run live viewer quizzes and subscriber game challenges on YouTube every month. Subscribe so you don't miss the next game room link!
+              </p>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/@PlayzoneOfficial?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-youtube js-subscribe-link" style="width:100%;">
+                Subscribe to Join Live Streams
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom:14px;">
+            <img src="assets/images/logo.svg" alt="PLAYZONE Logo">
+          </div>
+          <p style="font-size:0.88rem; color:var(--text-muted);">
+            Interactive community arena for sports and cinema lovers.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Interactive Games</h4>
+          <ul class="footer-links">
+            <li><a href="#quiz-section">Sports &amp; Cinema Quiz</a></li>
+            <li><a href="#challenge-section">Random Challenge Generator</a></li>
+            <li><a href="#who-wins-section">Who Wins? Matchups</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sports.html">Sports Zone</a></li>
+            <li><a href="cinema.html">Cinema Zone</a></li>
+            <li><a href="opinions.html">Opinions</a></li>
+            <li><a href="contact.html">Contact Creator</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Subscribe</h4>
+          <a href="https://www.youtube.com/@PlayzoneOfficial?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-youtube js-subscribe-link" style="width:100%;">
+            Subscribe on YouTube
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-disclaimer">
+          <strong>Interactive Disclaimer:</strong> All quiz questions, challenges, and comparison results are client-side interactive demonstrations designed solely for fan entertainment. They do not claim to represent official statistics or betting recommendations.
+        </p>
+        <p>&copy; 2026 PLAYZONE.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

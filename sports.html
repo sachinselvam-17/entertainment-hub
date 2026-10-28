@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Zone | Cricket, Football & Motorsport Breakdowns | PLAYZONE</title>
+  <meta name="description" content="Deep-dive tactical match breakdowns, death-overs analysis, pressing systems, and motorsport strategies from the PLAYZONE sports desk.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sports Zone | PLAYZONE Creator Hub">
+  <meta property="og:description" content="In-depth tactical analysis across Cricket, Football, and Motorsports. Original creator breakdowns and companion YouTube watch-alongs.">
+  <meta property="og:image" content="assets/images/cover-sports.svg">
+  <meta property="og:url" content="https://username.github.io/EntertainmentHub/sports.html">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-ticker" role="region" aria-label="Announcement Banner">
+    <div class="container ticker-content">
+      <div class="ticker-left">
+        <span class="ticker-badge">SPORTS DESK</span>
+        <span class="ticker-text">🏏 T20 Death-Overs Masterclass video is now live on our YouTube channel!</span>
+      </div>
+      <div class="ticker-socials">
+        <a href="https://www.youtube.com/@PlayzoneOfficial" target="_blank" rel="noopener noreferrer" class="js-channel-link">YouTube Channel</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="PLAYZONE Home">
+        <img src="assets/images/logo.svg" alt="PLAYZONE Logo">
+      </a>
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="sports.html" class="nav-link active">Sports Zone</a>
+        <a href="cinema.html" class="nav-link">Cinema Zone</a>
+        <a href="opinions.html" class="nav-link">Opinions</a>
+        <a href="challenges.html" class="nav-link">Fun &amp; Challenges</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://www.youtube.com/@PlayzoneOfficial?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-youtube js-subscribe-link">
+          <span>Subscribe</span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open mobile navigation menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-drawer-header">
+      <span class="brand-logo" style="font-size:1.2rem;">PLAY<span class="text-accent-red">ZONE</span></span>
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close mobile navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="sports.html" class="mobile-nav-link active">Sports Zone</a></li>
+      <li><a href="cinema.html" class="mobile-nav-link">Cinema Zone</a></li>
+      <li><a href="opinions.html" class="mobile-nav-link">Opinions</a></li>
+      <li><a href="challenges.html" class="mobile-nav-link">Fun &amp; Challenges</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="https://www.youtube.com/@PlayzoneOfficial?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn btn-youtube js-subscribe-link" style="width:100%;">
+        Subscribe on YouTube
+      </a>
+    </div>
+  </aside>
+  <div class="drawer-backdrop" id="drawer-backdrop" tabindex="-1"></div>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content" class="main-content">
+    
+    <!-- Hero Banner -->
+    <section class="section-tight" style="background: radial-gradient(circle at 50% 20%, rgba(255, 30, 39, 0.12), transparent 70%); border-bottom:1px solid var(--border-subtle);">
+      <div class="container">
+        <div style="max-width:760px; margin-bottom: 24px;">
+          <span class="section-tag">THE STADIUM DESK</span>
+          <h1 style="margin-top:8px;">Sports Zone: Analysis, Tactics &amp; Stadium Debates</h1>
+          <p style="color:var(--text-secondary); font-size:1.1rem; margin-top:8px;">
+            Beyond the scoreboard. Dissecting bowling rotations, counter-pressing traps, motorsport telemetries, and the psychological moments that turn contenders into champions.
+          </p>
+          <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:16px;">
+            <span class="badge badge-sample">⚠️ All articles are sample creator demonstrations until replaced with verified tournament analysis</span>
+          </div>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-tabs" role="tablist" aria-label="Sports Categories">
+          <button class="filter-btn js-filter-tab active" data-category="all" role="tab" aria-selected="true">All Sports (6)</button>
+          <button class="filter-btn js-filter-tab" data-category="cricket" role="tab" aria-selected="false">🏏 Cricket</button>
+          <button class="filter-btn js-filter-tab" data-category="football" role="tab" aria-selected="false">⚽ Football</button>
+          <button class="filter-btn js-filter-tab" data-category="motorsports" role="tab" aria-selected="false">🏎️ Motorsports</button>
+          <button class="filter-btn js-filter-tab" data-category="other" role="tab" aria-selected="false">🏅 Other Sports</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles Grid Section -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-cols-3" id="articles-grid">
+
+          <!-- Card 1: Cricket -->
+          <article class="card" data-category="cricket">
+            <div class="card-media">
+              <img src="assets/images/cover-sports.svg" alt="Cricket bowling yorker analysis graphic" loading="lazy">
+              <span class="badge badge-red card-overlay-badge">Cricket</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span>Oct 24, 2026</span>
+                <span>•</span>
+                <span>4 min read</span>
+              </div>
+              <h3 class="card-title">The Art of the Death Overs: Why Yorker Execution Decides Modern T20s</h3>
+              <p class="card-summary">Sample creator analysis dissecting how bowling rotations, wide yorkers, and slower bouncers tilt high-scoring thrillers.</p>
+              <div class="card-footer">
+                <span class="badge badge-sample">Sample Content</span>
+                <a href="#" class="btn btn-sm btn-outline js-open-article" data-article-id="sp-1">Read Analysis →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Football -->
+          <article class="card" data-category="football">
+            <div class="card-media">
+              <img src="assets/images/cover-sports.svg" alt="Football tactical press diagram visual" loading="lazy">
+              <span class="badge badge-red card-overlay-badge">Football</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span>Oct 22, 2026</span>
+                <span>•</span>
+                <span>5 min read</span>
+              </div>
+              <h3 class="card-title">High-Pressing Midfields: The Tactical Shift Dominating European Nights</h3>
+              <p class="card-summary">Sample tactical breakdown of inverted fullbacks, counter-pressing triggers, and how modern managers exploit transitional turnovers.</p>
+              <div class="card-footer">
+                <span class="badge badge-sample">Sample Content</span>
+                <a href="#" class="btn btn-sm btn-outline js-open-article" data-article-id="sp-2">Read Analysis →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Motorsports -->
+          <article class="card" data-category="motorsports">
+            <div class="card-media">
+              <img src="assets/images/cover-sports.svg" alt="Formula 1 pit stop undercut strategy visual" loading="lazy">
+              <span class="badge badge-red card-overlay-badge">Motorsports</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span>Oct 19, 2026</span>
+                <span>•</span>
+                <span>3 min read</span>
+              </div>
+              <h3 class="card-title">Street Circuit Strategy: Undercut vs Overcut Under Safety Car Conditions</h3>
+              <p class="card-summary">Sample motorsport analysis into tire degradation curves, track evolution, and the high-stakes pit wall gamble at narrow street venues.</p>
+              <div class="card-footer">
+                <span class="badge badge-sample">Sample Content</span>
+                <a href="#" class="btn btn-sm btn-outline js-open-article" data-article-id="sp-3">Read Analysis →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Cricket -->
+          <article class="card" data-category="cricket">
+            <div class="card-media">
+              <img src="assets/images/cover-sports.svg" alt="Mystery spin bowling release grip visual" loading="lazy">
+              <span class="badge badge-red card-overlay-badge">Cricket</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span>Oct 16, 2026</span>
+                <span>•</span>
+                <span>4 min read</span>
+              </div>
+              <h3 class="card-title">The Spin Revolution: Why Mystery Spinners Are Franchise Cricket Gold</h3>
+              <p class="card-summary">Sample breakdown of carrom balls, wrong'uns, and release angles that continue to bamboozle the world's most aggressive batters.</p>
+              <div class="card-footer">
+                <span class="badge badge-sample">Sample Content</span>
+                <a href="#" class="btn btn-sm btn-outline js-open-article" data-article-id="sp-4">Read Analysis →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Football -->
+          <article class="card" data-category="football">
+            <div class="card-media">
+              <img src="assets/images/cover-sports.svg" alt="Striker expected goals radar graphic" loading="lazy">
+              <span class="badge badge-red card-overlay-badge">Football</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span>Oct 12, 2026</span>
+                <span>•</span>
+                <span>4 min read</span>
+              </div>
+              <h3 class="card-title">Golden Boot Contenders: Statistical Analysis of Finishing Efficiency</h3>
+              <p class="card-summary">Sample analytical piece comparing Expected Goals (xG) overperformance across top league strikers this season.</p>
+              <div class="card-footer">
+                <span class="badge badge-sample">Sample Content</span>
+                <a href="#" class="btn btn-sm btn-outline js-open-article" data-article-id="sp-5">Read Analysis →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Other Sports -->
+          <article class="card" data-category="other">
+            <div class="card-media">
+              <img src="assets/images/cover-sports.svg" alt="Sports science recovery and biometric tracking visual" loading="lazy">
+              <span class="badge badge-red card-overlay-badge">Other Sports</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span>Oct 08, 2026</span>
+                <span>•</span>
+                <span>3 min read</span>
+              </div>
+              <h3 class="card-title">Next-Gen Athletes: How Biometrics &amp; High-Tech Recovery Are Extending Careers</h3>
+              <p class="card-summary">Sample overview of cryotherapy, sleep monitoring, and GPS load management in modern professional athletic regimes.</p>
+              <div class="card-footer">
+                <span class="badge badge-sample">Sample Content</span>
+                <a href="#" class="btn btn-sm btn-outline js-open-article" data-article-id="sp-6">Read Analysis →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Companion YouTube Video Callout -->
+    <section class="section-tight">
+      <div class="container">
+        <div class="subscribe-callout">
+          <div class="subscribe-grid">
+            <div>
+              <span class="badge badge-red" style="margin-bottom:10px;">SPORTS WATCH-ALONGS</span>
+              <h2 style="font-size:1.8rem; margin-bottom:10px;">Catch Our Next Live Matchday Reaction</h2>
+              <p style="color:var(--text-secondary); margin:0;">
+                We stream live matchday watch-alongs on YouTube with instant fan reactions, whiteboard tactics, and live chat Q&amp;A.
+              </p>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/@PlayzoneOfficial?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-youtube js-subscribe-link" style="width:100%;">
+                Subscribe to Catch Live Streams
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Reusable Article Reader Modal -->
+  <div class="modal-overlay" id="article-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div id="modal-meta" class="card-meta" style="margin:0;"></div>
+        <button class="drawer-close-btn" id="modal-close-btn" aria-label="Close modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-title" style="margin-bottom:16px;"></h2>
+        <div id="modal-body-content"></div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" id="modal-video-btn" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-youtube">
+          Watch Breakdown on YouTube
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="modal-backdrop"></div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom:14px;">
+            <img src="assets/images/logo.svg" alt="PLAYZONE Logo">
+          </div>
+          <p style="font-size:0.88rem; color:var(--text-muted);">
+            Independent sports analysis and fan commentary. Never fabricating scores or breaking news.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Sports Categories</h4>
+          <ul class="footer-links">
+            <li><a href="sports.html">Cricket Breakdowns</a></li>
+            <li><a href="sports.html">Football Pressing Tactics</a></li>
+            <li><a href="sports.html">Formula 1 Strategy</a></li>
+            <li><a href="opinions.html">Match Predictions &amp; Hot Takes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cinema.html">Cinema Zone</a></li>
+            <li><a href="challenges.html">Fun &amp; Challenges</a></li>
+            <li><a href="contact.html">Contact Creator</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow The Action</h4>
+          <a href="https://www.youtube.com/@PlayzoneOfficial?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-youtube js-subscribe-link" style="width:100%;">
+            Subscribe to Channel
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-disclaimer">
+          <strong>Sports Disclaimer:</strong> Sports articles on this platform represent creator commentary and tactical opinions. PLAYZONE is not affiliated with any official sports leagues, FIFA, ICC, or F1.
+        </p>
+        <p>&copy; 2026 PLAYZONE.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

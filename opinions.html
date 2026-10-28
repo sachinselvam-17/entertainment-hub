@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opinions, Rankings & Debates | PLAYZONE Creator Hub</title>
+  <meta name="description" content="Bold sports hot takes, cinema tier lists, tournament predictions, and editorial debates from the creator of PLAYZONE.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Opinions & Debates | PLAYZONE">
+  <meta property="og:description" content="Unfiltered editorial commentary, rankings, and predictions for sports and cinema fans.">
+  <meta property="og:image" content="assets/images/cover-opinion.svg">
+  <meta property="og:url" content="https://username.github.io/EntertainmentHub/opinions.html">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-ticker" role="region" aria-label="Announcement Banner">
+    <div class="container ticker-content">
+      <div class="ticker-left">
+        <span class="ticker-badge" style="background:#8B5CF6; color:#FFF;">HOT TAKES</span>
+        <span class="ticker-text">🔥 Ranking: Top 5 Clutch Finishers in Modern Cricket History! Drop your picks!</span>
+      </div>
+      <div class="ticker-socials">
+        <a href="https://www.youtube.com/@PlayzoneOfficial" target="_blank" rel="noopener noreferrer" class="js-channel-link">YouTube Channel</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="PLAYZONE Home">
+        <img src="assets/images/logo.svg" alt="PLAYZONE Logo">
+      </a>
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="sports.html" class="nav-link">Sports Zone</a>
+        <a href="cinema.html" class="nav-link">Cinema Zone</a>
+        <a href="opinions.html" class="nav-link active">Opinions</a>
+        <a href="challenges.html" class="nav-link">Fun &amp; Challenges</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://www.youtube.com/@PlayzoneOfficial?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-youtube js-subscribe-link">
+          <span>Subscribe</span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open mobile navigation menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-drawer-header">
+      <span class="brand-logo" style="font-size:1.2rem;">PLAY<span class="text-accent-red">ZONE</span></span>
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close mobile navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="sports.html" class="mobile-nav-link">Sports Zone</a></li>
+      <li><a href="cinema.html" class="mobile-nav-link">Cinema Zone</a></li>
+      <li><a href="opinions.html" class="mobile-nav-link active">Opinions</a></li>
+      <li><a href="challenges.html" class="mobile-nav-link">Fun &amp; Challenges</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="https://www.youtube.com/@PlayzoneOfficial?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn btn-youtube js-subscribe-link" style="width:100%;">
+        Subscribe on YouTube
+      </a>
+    </div>
+  </aside>
+  <div class="drawer-backdrop" id="drawer-backdrop" tabindex="-1"></div>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content" class="main-content">
+    
+    <!-- Hero Banner -->
+    <section class="section-tight" style="background: radial-gradient(circle at 50% 20%, rgba(139, 92, 246, 0.12), transparent 70%); border-bottom:1px solid var(--border-subtle);">
+      <div class="container">
+        <div style="max-width:780px; margin-bottom: 24px;">
+          <span class="section-tag" style="color:#A78BFA;">EDITORIAL MAGAZINE</span>
+          <h1 style="margin-top:8px;">Opinions, Tier Lists &amp; Fan Debates</h1>
+          <p style="color:var(--text-secondary); font-size:1.1rem; margin-top:8px;">
+            Unfiltered hot takes, match predictions, movie tier lists, and entertainment controversies. Every article here is personal creator commentary designed to spark healthy fan debates.
+          </p>
+          <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:16px;">
+            <span class="badge badge-sample">
+              ⚖️ Clear Editorial Disclaimer: All opinions, rankings, and predictions are personal creator hot takes and commentary, not verified factual news or professional betting advice.
+            </span>
+          </div>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-tabs" role="tablist" aria-label="Opinion Categories">
+          <button class="filter-btn js-filter-tab active" data-category="all" role="tab" aria-selected="true">All Opinions (5)</button>
+          <button class="filter-btn js-filter-tab" data-category="rankings" role="tab" aria-selected="false">🏆 Rankings &amp; Tier Lists</button>
+          <button class="filter-btn js-filter-tab" data-category="match-opinions" role="tab" aria-selected="false">🏟️ Match Opinions</button>
+          <button class="filter-btn js-filter-tab" data-category="predictions" role="tab" aria-selected="false">🔮 Predictions</button>
+          <button class="filter-btn js-filter-tab" data-category="debates" role="tab" aria-selected="false">🎙️ Debates</button>
+          <button class="filter-btn js-filter-tab" data-category="movie-reviews" role="tab" aria-selected="false">🍿 Movie Review Takes</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Opinions Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-cols-2" id="articles-grid">
+
+          <!-- Card 1: Rankings -->
+          <article class="card" data-category="rankings">
+            <div class="card-media">
+              <img src="assets/images/cover-opinion.svg" alt="Cricket finishers ranking countdown graphic" loading="lazy">
+              <span class="badge badge-red card-overlay-badge">Rankings</span>
+            </div>
+            <div class="card-body" style="padding:24px;">
+              <div class="card-meta">
+                <span>Oct 26, 2026</span>
+                <span>•</span>
+                <span>4 min read</span>
+                <span>•</span>
+                <span class="text-accent-gold">Creator Top 5</span>
+              </div>
+              <h2 class="card-title" style="font-size:1.35rem;">Top 5 Clutch Finishers in Modern Cricket History (Debate Inside!)</h2>
+              <p style="font-style:italic; color:var(--text-primary); font-size:0.92rem; margin-bottom:12px; border-left:3px solid var(--accent-red); padding-left:12px;">
+                "Ice in the veins beats raw bat speed every single time."
+              </p>
+              <p class="card-summary">Sample creator ranking counting down the coolest calm-under-pressure finishers who turn impossible chases into unforgettable victories.</p>
+              <div class="card-footer">
+                <span class="badge badge-sample">Subjective Hot Take</span>
+                <a href="#" class="btn btn-sm btn-outline js-open-article" data-article-id="op-1">Read Full Ranking →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Match Opinions -->
+          <article class="card" data-category="match-opinions">
+            <div class="card-media">
+              <img src="assets/images/cover-opinion.svg" alt="Sports data spreadsheet vs gut instinct visual" loading="lazy">
+              <span class="badge badge-red card-overlay-badge">Match Opinions</span>
+            </div>
+            <div class="card-body" style="padding:24px;">
+              <div class="card-meta">
+                <span>Oct 23, 2026</span>
+                <span>•</span>
+                <span>5 min read</span>
+                <span>•</span>
+                <span class="text-accent-gold">Tactical Debate</span>
+              </div>
+              <h2 class="card-title" style="font-size:1.35rem;">Hot Take: Why Over-Reliance on Data Analytics Is Killing Sporting Instinct</h2>
+              <p style="font-style:italic; color:var(--text-primary); font-size:0.92rem; margin-bottom:12px; border-left:3px solid var(--accent-red); padding-left:12px;">
+                "Algorithms cannot measure heart, momentum, and crowd adrenaline."
+              </p>
+              <p class="card-summary">Sample creator debate on whether rigid matchup spreadsheets are robbing captains and players of organic game-reading brilliance.</p>
+              <div class="card-footer">
+                <span class="badge badge-sample">Subjective Hot Take</span>
+                <a href="#" class="btn btn-sm btn-outline js-open-article" data-article-id="op-2">Read Hot Take →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Predictions -->
+          <article class="card" data-category="predictions">
+            <div class="card-media">
+              <img src="assets/images/cover-opinion.svg" alt="Tournament prediction bracket visual" loading="lazy">
+              <span class="badge badge-red card-overlay-badge">Predictions</span>
+            </div>
+            <div class="card-body" style="padding:24px;">
+              <div class="card-meta">
+                <span>Oct 20, 2026</span>
+                <span>•</span>
+                <span>3 min read</span>
+                <span>•</span>
+                <span class="text-accent-gold">Dark Horses</span>
+              </div>
+              <h2 class="card-title" style="font-size:1.35rem;">Predictions: 3 Dark Horse Contenders Set to Shock The Upcoming Tournament</h2>
+              <p style="font-style:italic; color:var(--text-primary); font-size:0.92rem; margin-bottom:12px; border-left:3px solid var(--accent-red); padding-left:12px;">
+                "Don't sleep on well-drilled underdogs with zero burden of expectations."
+              </p>
+              <p class="card-summary">Sample creator tournament predictions breaking down tournament matchups and potential giant-killing upsets.</p>
+              <div class="card-footer">
+                <span class="badge badge-sample">Speculative Opinion</span>
+                <a href="#" class="btn btn-sm btn-outline js-open-article" data-article-id="op-3">Read Prediction →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Debates -->
+          <article class="card" data-category="debates">
+            <div class="card-media">
+              <img src="assets/images/cover-opinion.svg" alt="Cinema franchise fatigue debate graphic" loading="lazy">
+              <span class="badge badge-red card-overlay-badge">Entertainment Debates</span>
+            </div>
+            <div class="card-body" style="padding:24px;">
+              <div class="card-meta">
+                <span>Oct 17, 2026</span>
+                <span>•</span>
+                <span>4 min read</span>
+                <span>•</span>
+                <span class="text-accent-gold">Cultural Debate</span>
+              </div>
+              <h2 class="card-title" style="font-size:1.35rem;">Debate: Has The Marvel/Franchise Era Irreversibly Damaged Original Screenplays?</h2>
+              <p style="font-style:italic; color:var(--text-primary); font-size:0.92rem; margin-bottom:12px; border-left:3px solid var(--accent-red); padding-left:12px;">
+                "Audiences are craving standalone stories with real human consequences."
+              </p>
+              <p class="card-summary">Sample debate dissecting moviegoer franchise fatigue, post-credit culture, and why standalone original cinema is fighting back.</p>
+              <div class="card-footer">
+                <span class="badge badge-sample">Subjective Hot Take</span>
+                <a href="#" class="btn btn-sm btn-outline js-open-article" data-article-id="op-4">Read Debate →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Movie Reviews Take -->
+          <article class="card" data-category="movie-reviews">
+            <div class="card-media">
+              <img src="assets/images/cover-opinion.svg" alt="Hero action stakes visual" loading="lazy">
+              <span class="badge badge-red card-overlay-badge">Movie Reviews</span>
+            </div>
+            <div class="card-body" style="padding:24px;">
+              <div class="card-meta">
+                <span>Oct 14, 2026</span>
+                <span>•</span>
+                <span>3 min read</span>
+                <span>•</span>
+                <span class="text-accent-gold">Storytelling</span>
+              </div>
+              <h2 class="card-title" style="font-size:1.35rem;">Movie Review Hot Take: The Best Action Sequences Are The Ones Where The Hero Loses First</h2>
+              <p style="font-style:italic; color:var(--text-primary); font-size:0.92rem; margin-bottom:12px; border-left:3px solid var(--accent-red); padding-left:12px;">
+                "Invincible heroes are boring. Vulnerability makes triumph exhilarating."
+              </p>
+              <p class="card-summary">Sample review thesis on why classic storytelling demands high physical and emotional costs for the protagonist.</p>
+              <div class="card-footer">
+                <span class="badge badge-sample">Subjective Hot Take</span>
+                <a href="#" class="btn btn-sm btn-outline js-open-article" data-article-id="op-5">Read Hot Take →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Debate Discussion Callout -->
+    <section class="section-tight">
+      <div class="container">
+        <div class="subscribe-callout">
+          <div class="subscribe-grid">
+            <div>
+              <span class="badge badge-red" style="margin-bottom:10px;">JOIN THE DISCUSSION</span>
+              <h2 style="font-size:1.8rem; margin-bottom:10px;">Have A Counter-Argument? Let's Hear It!</h2>
+              <p style="color:var(--text-secondary); margin:0;">
+                Every opinion article has a companion discussion thread on our YouTube channel. Comment with your own rankings and we might feature your take on the next livestream!
+              </p>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/@PlayzoneOfficial?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-youtube js-subscribe-link" style="width:100%;">
+                Comment on YouTube
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Reusable Article Reader Modal -->
+  <div class="modal-overlay" id="article-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div id="modal-meta" class="card-meta" style="margin:0;"></div>
+        <button class="drawer-close-btn" id="modal-close-btn" aria-label="Close modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-title" style="margin-bottom:16px;"></h2>
+        <div id="modal-body-content"></div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" id="modal-video-btn" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-youtube">
+          Join YouTube Debate
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="modal-backdrop"></div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom:14px;">
+            <img src="assets/images/logo.svg" alt="PLAYZONE Logo">
+          </div>
+          <p style="font-size:0.88rem; color:var(--text-muted);">
+            High-octane opinions, hot takes, and tier lists for passionate fans.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Editorial Categories</h4>
+          <ul class="footer-links">
+            <li><a href="opinions.html">Match Opinions</a></li>
+            <li><a href="opinions.html">Movie Reviews</a></li>
+            <li><a href="opinions.html">Rankings &amp; Tier Lists</a></li>
+            <li><a href="opinions.html">Predictions &amp; Debates</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sports.html">Sports Zone</a></li>
+            <li><a href="cinema.html">Cinema Zone</a></li>
+            <li><a href="challenges.html">Fun &amp; Challenges</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="https://www.youtube.com/@PlayzoneOfficial?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-youtube js-subscribe-link" style="width:100%;">
+            Subscribe to Channel
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-disclaimer">
+          <strong>Opinions Disclaimer:</strong> All articles in this section represent personal creator commentary and opinions, not factual news or verified statistics.
+        </p>
+        <p>&copy; 2026 PLAYZONE.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
