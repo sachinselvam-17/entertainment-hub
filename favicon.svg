@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="pz-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF1E27"/>
+      <stop offset="100%" stop-color="#990008"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0A0B0E"/>
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="#242938" stroke-width="2"/>
+  <path d="M22 16 H36 C43 16 48 20 48 27 C48 34 43 38 36 38 H30 V48 H22 Z M30 23 V31 H35 C38 31 40 29 40 27 C40 25 38 23 35 23 Z" fill="url(#pz-grad)"/>
+  <polygon points="42,36 50,44 42,52" fill="#F59E0B"/>
+</svg>

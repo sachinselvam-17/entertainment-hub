@@ -37,7 +37,13 @@
   <header class="site-header" role="banner">
     <div class="container nav-container">
       <a href="index.html" class="brand-logo" aria-label="PLAYZONE Home">
-        <img src="assets/images/logo.svg" alt="PLAYZONE Logo" onerror="this.onerror=null; this.src='logo.svg';">
+        <img src="assets/images/logo.svg" alt="PLAYZONE Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
+        <span class="logo-fallback" style="display:none;">
+          <span class="logo-fallback-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><polygon points="6,3 20,12 6,21" fill="#FF1E27"/><circle cx="5" cy="3" r="2.5" fill="#F59E0B"/></svg>
+          </span>
+          <span>PLAY<span class="text-accent-red">ZONE</span></span>
+        </span>
       </a>
       <nav class="nav-menu" aria-label="Main Navigation">
         <a href="index.html" class="nav-link">Home</a>
@@ -299,7 +305,13 @@
       <div class="footer-grid">
         <div class="footer-col">
           <div class="brand-logo" style="margin-bottom:14px;">
-            <img src="assets/images/logo.svg" alt="PLAYZONE Logo" onerror="this.onerror=null; this.src='logo.svg';">
+            <img src="assets/images/logo.svg" alt="PLAYZONE Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
+            <span class="logo-fallback" style="display:none;">
+              <span class="logo-fallback-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><polygon points="6,3 20,12 6,21" fill="#FF1E27"/><circle cx="5" cy="3" r="2.5" fill="#F59E0B"/></svg>
+              </span>
+              <span>PLAY<span class="text-accent-red">ZONE</span></span>
+            </span>
           </div>
           <p style="font-size:0.88rem; color:var(--text-muted);">
             Independent cinema commentary, movie analysis, and teaser breakdowns for cinema buffs.

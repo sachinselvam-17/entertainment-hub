@@ -13,7 +13,7 @@
   // --------------------------------------------------------------------------
   // 1. GLOBAL INITIALIZATION & DOM READY
   // --------------------------------------------------------------------------
-  document.addEventListener('DOMContentLoaded', () => {
+  function initApp() {
     initNavigation();
     hydrateCreatorData();
     initFeaturedVideo();
@@ -24,7 +24,13 @@
     initChallengeGenerator();
     initComparisonGame();
     initContactForm();
-  });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initApp);
+  } else {
+    initApp();
+  }
 
   // --------------------------------------------------------------------------
   // 2. NAVIGATION & MOBILE DRAWER

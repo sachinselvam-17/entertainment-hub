@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="avatar-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="ring-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF1E27"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="98" fill="url(#avatar-bg)"/>
+  <circle cx="100" cy="100" r="94" fill="none" stroke="url(#ring-grad)" stroke-width="4"/>
+  <!-- Creator silhouette with broadcast headphones -->
+  <!-- Shoulders -->
+  <path d="M40 180 C40 140 70 130 100 130 C130 130 160 140 160 180 Z" fill="#334155"/>
+  <!-- Head -->
+  <circle cx="100" cy="90" r="32" fill="#E2E8F0"/>
+  <!-- Hair / Cap -->
+  <path d="M68 85 C68 62 82 50 100 50 C118 50 132 62 132 85 C122 75 110 73 100 73 C88 73 78 75 68 85 Z" fill="#0F172A"/>
+  <!-- Headphone band -->
+  <path d="M64 88 C64 55 136 55 136 88" stroke="#FF1E27" stroke-width="6" fill="none"/>
+  <!-- Ear cups -->
+  <rect x="58" y="78" width="12" height="24" rx="5" fill="#1E293B" stroke="#F59E0B" stroke-width="2"/>
+  <rect x="130" y="78" width="12" height="24" rx="5" fill="#1E293B" stroke="#F59E0B" stroke-width="2"/>
+  <!-- Mic boom -->
+  <path d="M64 96 Q56 116 78 116" stroke="#94A3B8" stroke-width="3" fill="none"/>
+  <circle cx="80" cy="116" r="4" fill="#FF1E27"/>
+  <!-- Live badge -->
+  <rect x="70" y="166" width="60" height="20" rx="10" fill="#FF1E27"/>
+  <circle cx="82" cy="176" r="3" fill="#FFFFFF"/>
+  <text x="92" y="180" font-family="'Inter', sans-serif" font-weight="800" font-size="10" fill="#FFFFFF" letter-spacing="1">HOST</text>
+</svg>

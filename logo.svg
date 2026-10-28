@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
+  <defs>
+    <linearGradient id="logo-red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2A32"/>
+      <stop offset="100%" stop-color="#B8000A"/>
+    </linearGradient>
+    <linearGradient id="accent-gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#FCD34D"/>
+    </linearGradient>
+  </defs>
+  <!-- Icon container -->
+  <rect x="4" y="6" width="48" height="48" rx="10" fill="#12141C" stroke="#242938" stroke-width="2"/>
+  <rect x="7" y="9" width="42" height="42" rx="8" fill="#1A1E2B" fill-opacity="0.6"/>
+  <!-- Play emblem -->
+  <polygon points="22,18 40,30 22,42" fill="url(#logo-red)"/>
+  <circle cx="21" cy="18" r="2.5" fill="#F59E0B"/>
+  <!-- Brand text -->
+  <text x="64" y="34" font-family="'Outfit', 'Inter', -apple-system, sans-serif" font-weight="900" font-size="24" letter-spacing="1.5" fill="#FFFFFF">
+    PLAY<tspan fill="url(#logo-red)">ZONE</tspan>
+  </text>
+  <!-- Subtitle badge -->
+  <text x="65" y="47" font-family="'Inter', sans-serif" font-weight="700" font-size="8.5" letter-spacing="2.8" fill="#9CA3AF">
+    SPORTS &amp; CINEMA HUB
+  </text>
+  <circle cx="218" cy="28" r="3" fill="url(#accent-gold)"/>
+</svg>

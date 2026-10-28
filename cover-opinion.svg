@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-opinion" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="60%" stop-color="#1F1B2E"/>
+      <stop offset="100%" stop-color="#3B0715"/>
+    </linearGradient>
+    <linearGradient id="glow-red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF1E27"/>
+      <stop offset="100%" stop-color="#FF6B6B"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#bg-opinion)"/>
+  <!-- Quote mark graphics in background -->
+  <text x="70" y="160" font-family="'Outfit', serif" font-weight="900" font-size="160" fill="#2E1C38" opacity="0.6">“</text>
+  <text x="460" y="280" font-family="'Outfit', serif" font-weight="900" font-size="160" fill="#2E1C38" opacity="0.6">”</text>
+  <!-- Broadcast mic icon -->
+  <g transform="translate(260, 90)">
+    <rect x="25" y="15" width="30" height="60" rx="15" fill="#1E293B" stroke="url(#glow-red)" stroke-width="3"/>
+    <!-- Mic lines -->
+    <line x1="33" y1="28" x2="47" y2="28" stroke="#94A3B8" stroke-width="2"/>
+    <line x1="33" y1="38" x2="47" y2="38" stroke="#94A3B8" stroke-width="2"/>
+    <line x1="33" y1="48" x2="47" y2="48" stroke="#94A3B8" stroke-width="2"/>
+    <!-- Cradle -->
+    <path d="M15 45 C15 65 65 65 65 45" stroke="#F59E0B" stroke-width="3" fill="none"/>
+    <line x1="40" y1="67" x2="40" y2="85" stroke="#F59E0B" stroke-width="3"/>
+    <rect x="22" y="85" width="36" height="6" rx="2" fill="#E2E8F0"/>
+    <!-- Waves -->
+    <path d="M6 35 C1 45 1 55 6 65" stroke="#FF1E27" stroke-width="2" fill="none" opacity="0.8"/>
+    <path d="M74 35 C79 45 79 55 74 65" stroke="#FF1E27" stroke-width="2" fill="none" opacity="0.8"/>
+  </g>
+  <text x="300" y="275" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="800" font-size="20" letter-spacing="4" fill="#FFFFFF">OPINIONS &amp; DEBATES</text>
+  <text x="300" y="297" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="11" letter-spacing="2" fill="#CBD5E1">MATCH PREDICTIONS, RANKINGS &amp; HOT TAKES</text>
+</svg>

@@ -471,6 +471,30 @@ p:last-child {
   width: auto;
 }
 
+.logo-fallback {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 1.45rem;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  line-height: 1;
+}
+
+.logo-fallback-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #12141C;
+  border: 1px solid #242938;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
 .nav-menu {
   display: none;
   align-items: center;

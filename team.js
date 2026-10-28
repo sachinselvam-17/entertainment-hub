@@ -19,6 +19,35 @@
  * ==============================================================================
  */
 
+// Self-contained neutral SVG avatar data URI (never breaks even if remote image files are missing)
+const DEFAULT_AVATAR_DATA_URI = "data:image/svg+xml;utf8," + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="avatar-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181C28"/>
+      <stop offset="50%" stop-color="#121520"/>
+      <stop offset="100%" stop-color="#0A0C12"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="35%" r="45%">
+      <stop offset="0%" stop-color="#FF1E27" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#FF1E27" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="300" height="400" fill="url(#avatar-bg)"/>
+  <line x1="0" y1="100" x2="300" y2="100" stroke="#1F2433" stroke-width="0.8" opacity="0.4"/>
+  <line x1="0" y1="200" x2="300" y2="200" stroke="#1F2433" stroke-width="0.8" opacity="0.4"/>
+  <line x1="0" y1="300" x2="300" y2="300" stroke="#1F2433" stroke-width="0.8" opacity="0.4"/>
+  <circle cx="150" cy="140" r="100" fill="url(#halo)"/>
+  <path d="M50 400 C50 310 90 280 150 280 C210 280 250 310 250 400 Z" fill="#1C2130" stroke="#2B3245" stroke-width="1.5"/>
+  <path d="M85 400 C85 330 115 315 150 315 C185 315 215 330 215 400 Z" fill="#242B3E" opacity="0.7"/>
+  <path d="M130 240 L170 240 L162 290 L138 290 Z" fill="#2B3349"/>
+  <ellipse cx="150" cy="165" rx="52" ry="68" fill="#2B3349" stroke="#3A4460" stroke-width="1.5"/>
+  <g transform="translate(115, 330)" opacity="0.9">
+    <rect x="0" y="0" width="70" height="24" rx="12" fill="#121520" stroke="#FF1E27" stroke-width="1"/>
+    <text x="35" y="16" font-family="'Outfit', sans-serif" font-weight="700" font-size="10" fill="#CBD5E1" text-anchor="middle" letter-spacing="1.5">CREATOR</text>
+  </g>
+  <text x="150" y="380" font-family="'Inter', sans-serif" font-weight="500" font-size="10.5" fill="#64748B" text-anchor="middle" letter-spacing="0.5">Photo placeholder</text>
+</svg>`);
+
 const TEAM_DATA = {
   sectionTitle: "Meet Our Founding Team",
   sectionSubtitle: "Four creators. One entertainment brand.",
@@ -184,7 +213,7 @@ function renderFoundingTeam(containerId = "founding-team-grid") {
             alt="Portrait of ${member.name}, ${member.role}" 
             class="team-photo"
             loading="lazy"
-            onerror="this.onerror=function(){ this.onerror=null; this.src='default-avatar.svg'; }; this.src='${member.fallbackPhoto}'; this.parentElement.classList.add('is-fallback');"
+            onerror="this.onerror=null; this.src=DEFAULT_AVATAR_DATA_URI; this.parentElement.classList.add('is-fallback');"
           />
           <div class="team-photo-overlay"></div>
           <span class="${badgeClass}">${member.badgeLabel}</span>
@@ -219,13 +248,19 @@ function renderFoundingTeam(containerId = "founding-team-grid") {
   container.innerHTML = cardsHtml;
 }
 
-// Attach to window and PLAYZONE_DATA
+// Attach to window and auto-render (robust against DOMContentLoaded timing)
 if (typeof window !== "undefined") {
   window.TEAM_DATA = TEAM_DATA;
   window.renderFoundingTeam = renderFoundingTeam;
+  window.DEFAULT_AVATAR_DATA_URI = DEFAULT_AVATAR_DATA_URI;
 
-  // Auto-render on DOM content loaded
-  document.addEventListener("DOMContentLoaded", () => {
+  function initTeamRendering() {
     renderFoundingTeam("founding-team-grid");
-  });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initTeamRendering);
+  } else {
+    initTeamRendering();
+  }
 }
